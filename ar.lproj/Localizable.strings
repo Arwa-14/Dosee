@@ -1,0 +1,24 @@
+///*
+//  Localizable.strings
+//  Dosee
+//
+//  Created by Arwa Ali Alshehri on 19/06/1444 AH.
+//
+//*/
+"dose" = "جرعة";
+"Doses" = "جرعاتي";
+"My doses" = "جرعاتي";
+"Today" = "اليوم";
+"time of dose" = "وقت الابرة";
+"Insulin type" = "نوع الانسولين";
+"SAVE" = "حفظ";
+"Allow notification" = "السماح بالاشعارات";
+"No alarm added" = "لا يوجد تنبيهات";
+"ALARM INFORMATION" = "بيانات المنبه";
+"ALARM REPEAT" = "تكرار المنبه";
+"ALARM ACTIVITY" = "مدة المنبه";
+"Music" = "صوت المنبه";
+"Welcome to Dosee Reminder" = "اهلا بك في منبه دوزي ";
+"Reminder is easier with us .." = "اسهل معنا";
+"Diabete care at your fingertips" = "اهتم بسكرك بخطوة بسيطة";
+"Get Started" = "ابدأ";

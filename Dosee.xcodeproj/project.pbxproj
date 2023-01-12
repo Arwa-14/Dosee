@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		693AAF0629707722002079E6 /* TimerStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693AAF0529707722002079E6 /* TimerStorage.swift */; };
+		6967ADF5296F63D1000CF385 /* DoseeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967ADF4296F63D1000CF385 /* DoseeApp.swift */; };
+		6967ADF9296F63D3000CF385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6967ADF8296F63D3000CF385 /* Assets.xcassets */; };
+		6967ADFC296F63D3000CF385 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6967ADFB296F63D3000CF385 /* Preview Assets.xcassets */; };
+		6967AE06296F63D3000CF385 /* DoseeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE05296F63D3000CF385 /* DoseeTests.swift */; };
+		6967AE10296F63D3000CF385 /* DoseeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE0F296F63D3000CF385 /* DoseeUITests.swift */; };
+		6967AE12296F63D3000CF385 /* DoseeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE11296F63D3000CF385 /* DoseeUITestsLaunchTests.swift */; };
+		6967AE22296F651C000CF385 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE21296F651C000CF385 /* Constants.swift */; };
+		6967AE25296F655D000CF385 /* Tenderness.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6967AE24296F655D000CF385 /* Tenderness.wav */; };
+		6967AE27296F6580000CF385 /* Once Again.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6967AE26296F6580000CF385 /* Once Again.wav */; };
+		6967AE29296F6587000CF385 /* Bell.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6967AE28296F6587000CF385 /* Bell.wav */; };
+		6967AE2B296F6590000CF385 /* Adventure.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6967AE2A296F6590000CF385 /* Adventure.wav */; };
+		6967AE2E296F65E3000CF385 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE2D296F65E3000CF385 /* NotificationManager.swift */; };
+		6967AE30296F6669000CF385 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE2F296F6669000CF385 /* PersistenceController.swift */; };
+		6967AE32296F6696000CF385 /* AlarmStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE31296F6696000CF385 /* AlarmStorage.swift */; };
+		6967AE36296F66EA000CF385 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE35296F66EA000CF385 /* AudioManager.swift */; };
+		6967AE39296F674C000CF385 /* AlarmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE38296F674C000CF385 /* AlarmViewModel.swift */; };
+		6967AE3D296F67B3000CF385 /* AlarmTriggeredViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE3C296F67B3000CF385 /* AlarmTriggeredViewModel.swift */; };
+		6967AE41296F680D000CF385 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE40296F680D000CF385 /* TimerViewModel.swift */; };
+		6967AE43296F6835000CF385 /* TimerActiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE42296F6835000CF385 /* TimerActiveViewModel.swift */; };
+		6967AE45296F6850000CF385 /* MusicListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE44296F6850000CF385 /* MusicListViewModel.swift */; };
+		6967AE4B296F698C000CF385 /* ActivityRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE4A296F698C000CF385 /* ActivityRecognizer.swift */; };
+		6967AE4D296F69DE000CF385 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE4C296F69DE000CF385 /* ViewRouter.swift */; };
+		6967AE4F296F6A0E000CF385 /* NotificationRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE4E296F6A0E000CF385 /* NotificationRequestManager.swift */; };
+		6967AE53296F6AC0000CF385 /* MainTriggeredAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE52296F6AC0000CF385 /* MainTriggeredAlarmView.swift */; };
+		6967AE55296F6AE9000CF385 /* AlarmNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE54296F6AE9000CF385 /* AlarmNotificationView.swift */; };
+		6967AE57296F6B0E000CF385 /* AlarmStopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE56296F6B0E000CF385 /* AlarmStopView.swift */; };
+		6967AE5A296F6B42000CF385 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE59296F6B42000CF385 /* Onboarding.swift */; };
+		6967AE60296F6BB0000CF385 /* NotificationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE5F296F6BB0000CF385 /* NotificationRequest.swift */; };
+		6967AE63296F6C06000CF385 /* MuisicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE62296F6C06000CF385 /* MuisicList.swift */; };
+		6967AE67296F6C6F000CF385 /* AddAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE66296F6C6F000CF385 /* AddAlarm.swift */; };
+		6967AE69296F6C98000CF385 /* AlarmListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE68296F6C98000CF385 /* AlarmListView.swift */; };
+		6967AE6B296F6CBF000CF385 /* AlarmCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE6A296F6CBF000CF385 /* AlarmCard.swift */; };
+		6967AE6D296F6CC5000CF385 /* EditAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE6C296F6CC4000CF385 /* EditAlarm.swift */; };
+		6967AE6F296F6CCA000CF385 /* AlarmDeleteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE6E296F6CCA000CF385 /* AlarmDeleteCard.swift */; };
+		6967AE88296F6D45000CF385 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE84296F6D45000CF385 /* MainView.swift */; };
+		6967AE8A296F6D45000CF385 /* TimerPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE86296F6D45000CF385 /* TimerPicker.swift */; };
+		6967AE90296F6DBE000CF385 /* Stalarm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6967AE8E296F6DBE000CF385 /* Stalarm.xcdatamodeld */; };
+		69DEF29229707BEA0080DAE5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 69DEF29129707BEA0080DAE5 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6967AE02296F63D3000CF385 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6967ADE9296F63D1000CF385 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6967ADF0296F63D1000CF385;
+			remoteInfo = Dosee;
+		};
+		6967AE0C296F63D3000CF385 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6967ADE9296F63D1000CF385 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6967ADF0296F63D1000CF385;
+			remoteInfo = Dosee;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		693AAF0529707722002079E6 /* TimerStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimerStorage.swift; path = "../../../../Downloads/stalarm-swiftui-main/Stalarm/Singleton/TimerStorage.swift"; sourceTree = "<group>"; };
+		6967ADF1296F63D1000CF385 /* Dosee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dosee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6967ADF4296F63D1000CF385 /* DoseeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoseeApp.swift; sourceTree = "<group>"; };
+		6967ADF8296F63D3000CF385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6967ADFB296F63D3000CF385 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6967AE01296F63D3000CF385 /* DoseeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoseeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6967AE05296F63D3000CF385 /* DoseeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoseeTests.swift; sourceTree = "<group>"; };
+		6967AE0B296F63D3000CF385 /* DoseeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoseeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6967AE0F296F63D3000CF385 /* DoseeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoseeUITests.swift; sourceTree = "<group>"; };
+		6967AE11296F63D3000CF385 /* DoseeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoseeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6967AE21296F651C000CF385 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6967AE24296F655D000CF385 /* Tenderness.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Tenderness.wav; sourceTree = "<group>"; };
+		6967AE26296F6580000CF385 /* Once Again.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Once Again.wav"; path = "../../../../Downloads/stalarm-swiftui-main/Stalarm/Resources/Once Again.wav"; sourceTree = "<group>"; };
+		6967AE28296F6587000CF385 /* Bell.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Bell.wav; path = "../../../../Downloads/stalarm-swiftui-main/Stalarm/Resources/Bell.wav"; sourceTree = "<group>"; };
+		6967AE2A296F6590000CF385 /* Adventure.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Adventure.wav; path = "../../../../Downloads/stalarm-swiftui-main/Stalarm/Resources/Adventure.wav"; sourceTree = "<group>"; };
+		6967AE2D296F65E3000CF385 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		6967AE2F296F6669000CF385 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		6967AE31296F6696000CF385 /* AlarmStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmStorage.swift; sourceTree = "<group>"; };
+		6967AE35296F66EA000CF385 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		6967AE38296F674C000CF385 /* AlarmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewModel.swift; sourceTree = "<group>"; };
+		6967AE3C296F67B3000CF385 /* AlarmTriggeredViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTriggeredViewModel.swift; sourceTree = "<group>"; };
+		6967AE40296F680D000CF385 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		6967AE42296F6835000CF385 /* TimerActiveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerActiveViewModel.swift; sourceTree = "<group>"; };
+		6967AE44296F6850000CF385 /* MusicListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListViewModel.swift; sourceTree = "<group>"; };
+		6967AE4A296F698C000CF385 /* ActivityRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRecognizer.swift; sourceTree = "<group>"; };
+		6967AE4C296F69DE000CF385 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		6967AE4E296F6A0E000CF385 /* NotificationRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRequestManager.swift; sourceTree = "<group>"; };
+		6967AE52296F6AC0000CF385 /* MainTriggeredAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTriggeredAlarmView.swift; sourceTree = "<group>"; };
+		6967AE54296F6AE9000CF385 /* AlarmNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmNotificationView.swift; sourceTree = "<group>"; };
+		6967AE56296F6B0E000CF385 /* AlarmStopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmStopView.swift; sourceTree = "<group>"; };
+		6967AE59296F6B42000CF385 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		6967AE5F296F6BB0000CF385 /* NotificationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRequest.swift; sourceTree = "<group>"; };
+		6967AE62296F6C06000CF385 /* MuisicList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuisicList.swift; sourceTree = "<group>"; };
+		6967AE66296F6C6F000CF385 /* AddAlarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddAlarm.swift; path = "../../../../../Downloads/stalarm-swiftui-main/Stalarm/Views/Alarm/AddAlarm.swift"; sourceTree = "<group>"; };
+		6967AE68296F6C98000CF385 /* AlarmListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlarmListView.swift; path = "../../../../../Downloads/stalarm-swiftui-main/Stalarm/Views/Alarm/AlarmListView.swift"; sourceTree = "<group>"; };
+		6967AE6A296F6CBF000CF385 /* AlarmCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlarmCard.swift; path = "../../../../../Downloads/stalarm-swiftui-main/Stalarm/Views/Alarm/AlarmCard.swift"; sourceTree = "<group>"; };
+		6967AE6C296F6CC4000CF385 /* EditAlarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditAlarm.swift; path = "../../../../../Downloads/stalarm-swiftui-main/Stalarm/Views/Alarm/EditAlarm.swift"; sourceTree = "<group>"; };
+		6967AE6E296F6CCA000CF385 /* AlarmDeleteCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlarmDeleteCard.swift; path = "../../../../../Downloads/stalarm-swiftui-main/Stalarm/Views/Alarm/AlarmDeleteCard.swift"; sourceTree = "<group>"; };
+		6967AE84296F6D45000CF385 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainView.swift; path = "../../../../Downloads/stalarm-swiftui-main/Stalarm/Views/MainView.swift"; sourceTree = "<group>"; };
+		6967AE86296F6D45000CF385 /* TimerPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimerPicker.swift; path = "../../../../Downloads/stalarm-swiftui-main/Stalarm/Views/TimerPicker.swift"; sourceTree = "<group>"; };
+		6967AE8F296F6DBE000CF385 /* Stalarm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stalarm.xcdatamodel; sourceTree = "<group>"; };
+		69DEF29129707BEA0080DAE5 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6967ADEE296F63D1000CF385 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6967ADFE296F63D3000CF385 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6967AE08296F63D3000CF385 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6967ADE8296F63D1000CF385 = {
+			isa = PBXGroup;
+			children = (
+				69DEF29129707BEA0080DAE5 /* Localizable.strings */,
+				6967ADF3296F63D1000CF385 /* Dosee */,
+				6967AE04296F63D3000CF385 /* DoseeTests */,
+				6967AE0E296F63D3000CF385 /* DoseeUITests */,
+				6967ADF2296F63D1000CF385 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6967ADF2296F63D1000CF385 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6967ADF1296F63D1000CF385 /* Dosee.app */,
+				6967AE01296F63D3000CF385 /* DoseeTests.xctest */,
+				6967AE0B296F63D3000CF385 /* DoseeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6967ADF3296F63D1000CF385 /* Dosee */ = {
+			isa = PBXGroup;
+			children = (
+				6967AE23296F652D000CF385 /* Resources */,
+				6967AE1E296F6482000CF385 /* Utils */,
+				6967AE8D296F6DA0000CF385 /* Core Data */,
+				6967AE50296F6A70000CF385 /* Views */,
+				6967AE49296F6975000CF385 /* Helper */,
+				6967AE37296F672E000CF385 /* View Models */,
+				6967ADF4296F63D1000CF385 /* DoseeApp.swift */,
+				6967ADF8296F63D3000CF385 /* Assets.xcassets */,
+				6967AE2C296F659C000CF385 /* Singleton */,
+				6967ADFA296F63D3000CF385 /* Preview Content */,
+			);
+			path = Dosee;
+			sourceTree = "<group>";
+		};
+		6967ADFA296F63D3000CF385 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6967ADFB296F63D3000CF385 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6967AE04296F63D3000CF385 /* DoseeTests */ = {
+			isa = PBXGroup;
+			children = (
+				6967AE05296F63D3000CF385 /* DoseeTests.swift */,
+			);
+			path = DoseeTests;
+			sourceTree = "<group>";
+		};
+		6967AE0E296F63D3000CF385 /* DoseeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6967AE0F296F63D3000CF385 /* DoseeUITests.swift */,
+				6967AE11296F63D3000CF385 /* DoseeUITestsLaunchTests.swift */,
+			);
+			path = DoseeUITests;
+			sourceTree = "<group>";
+		};
+		6967AE1E296F6482000CF385 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6967AE21296F651C000CF385 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6967AE23296F652D000CF385 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6967AE2A296F6590000CF385 /* Adventure.wav */,
+				6967AE28296F6587000CF385 /* Bell.wav */,
+				6967AE26296F6580000CF385 /* Once Again.wav */,
+				6967AE24296F655D000CF385 /* Tenderness.wav */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6967AE2C296F659C000CF385 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				6967AE2D296F65E3000CF385 /* NotificationManager.swift */,
+				6967AE2F296F6669000CF385 /* PersistenceController.swift */,
+				6967AE31296F6696000CF385 /* AlarmStorage.swift */,
+				693AAF0529707722002079E6 /* TimerStorage.swift */,
+				6967AE35296F66EA000CF385 /* AudioManager.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		6967AE37296F672E000CF385 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				6967AE38296F674C000CF385 /* AlarmViewModel.swift */,
+				6967AE3C296F67B3000CF385 /* AlarmTriggeredViewModel.swift */,
+				6967AE40296F680D000CF385 /* TimerViewModel.swift */,
+				6967AE42296F6835000CF385 /* TimerActiveViewModel.swift */,
+				6967AE44296F6850000CF385 /* MusicListViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		6967AE49296F6975000CF385 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				6967AE4A296F698C000CF385 /* ActivityRecognizer.swift */,
+				6967AE4C296F69DE000CF385 /* ViewRouter.swift */,
+				6967AE4E296F6A0E000CF385 /* NotificationRequestManager.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		6967AE50296F6A70000CF385 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6967AE84296F6D45000CF385 /* MainView.swift */,
+				6967AE86296F6D45000CF385 /* TimerPicker.swift */,
+				6967AE61296F6BD6000CF385 /* Alarm */,
+				6967AE58296F6B32000CF385 /* Onboarding */,
+				6967AE51296F6A86000CF385 /* AlarmTriggerd */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6967AE51296F6A86000CF385 /* AlarmTriggerd */ = {
+			isa = PBXGroup;
+			children = (
+				6967AE52296F6AC0000CF385 /* MainTriggeredAlarmView.swift */,
+				6967AE54296F6AE9000CF385 /* AlarmNotificationView.swift */,
+				6967AE56296F6B0E000CF385 /* AlarmStopView.swift */,
+			);
+			path = AlarmTriggerd;
+			sourceTree = "<group>";
+		};
+		6967AE58296F6B32000CF385 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				6967AE59296F6B42000CF385 /* Onboarding.swift */,
+				6967AE5F296F6BB0000CF385 /* NotificationRequest.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		6967AE61296F6BD6000CF385 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				6967AE62296F6C06000CF385 /* MuisicList.swift */,
+				6967AE66296F6C6F000CF385 /* AddAlarm.swift */,
+				6967AE68296F6C98000CF385 /* AlarmListView.swift */,
+				6967AE6A296F6CBF000CF385 /* AlarmCard.swift */,
+				6967AE6C296F6CC4000CF385 /* EditAlarm.swift */,
+				6967AE6E296F6CCA000CF385 /* AlarmDeleteCard.swift */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
+		6967AE8D296F6DA0000CF385 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				6967AE8E296F6DBE000CF385 /* Stalarm.xcdatamodeld */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6967ADF0296F63D1000CF385 /* Dosee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6967AE15296F63D3000CF385 /* Build configuration list for PBXNativeTarget "Dosee" */;
+			buildPhases = (
+				6967ADED296F63D1000CF385 /* Sources */,
+				6967ADEE296F63D1000CF385 /* Frameworks */,
+				6967ADEF296F63D1000CF385 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dosee;
+			productName = Dosee;
+			productReference = 6967ADF1296F63D1000CF385 /* Dosee.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6967AE00296F63D3000CF385 /* DoseeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6967AE18296F63D3000CF385 /* Build configuration list for PBXNativeTarget "DoseeTests" */;
+			buildPhases = (
+				6967ADFD296F63D3000CF385 /* Sources */,
+				6967ADFE296F63D3000CF385 /* Frameworks */,
+				6967ADFF296F63D3000CF385 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6967AE03296F63D3000CF385 /* PBXTargetDependency */,
+			);
+			name = DoseeTests;
+			productName = DoseeTests;
+			productReference = 6967AE01296F63D3000CF385 /* DoseeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6967AE0A296F63D3000CF385 /* DoseeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6967AE1B296F63D3000CF385 /* Build configuration list for PBXNativeTarget "DoseeUITests" */;
+			buildPhases = (
+				6967AE07296F63D3000CF385 /* Sources */,
+				6967AE08296F63D3000CF385 /* Frameworks */,
+				6967AE09296F63D3000CF385 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6967AE0D296F63D3000CF385 /* PBXTargetDependency */,
+			);
+			name = DoseeUITests;
+			productName = DoseeUITests;
+			productReference = 6967AE0B296F63D3000CF385 /* DoseeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6967ADE9296F63D1000CF385 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					6967ADF0296F63D1000CF385 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					6967AE00296F63D3000CF385 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 6967ADF0296F63D1000CF385;
+					};
+					6967AE0A296F63D3000CF385 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 6967ADF0296F63D1000CF385;
+					};
+				};
+			};
+			buildConfigurationList = 6967ADEC296F63D1000CF385 /* Build configuration list for PBXProject "Dosee" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ar,
+			);
+			mainGroup = 6967ADE8296F63D1000CF385;
+			productRefGroup = 6967ADF2296F63D1000CF385 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6967ADF0296F63D1000CF385 /* Dosee */,
+				6967AE00296F63D3000CF385 /* DoseeTests */,
+				6967AE0A296F63D3000CF385 /* DoseeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6967ADEF296F63D1000CF385 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6967ADFC296F63D3000CF385 /* Preview Assets.xcassets in Resources */,
+				6967AE29296F6587000CF385 /* Bell.wav in Resources */,
+				6967ADF9296F63D3000CF385 /* Assets.xcassets in Resources */,
+				69DEF29229707BEA0080DAE5 /* Localizable.strings in Resources */,
+				6967AE25296F655D000CF385 /* Tenderness.wav in Resources */,
+				6967AE27296F6580000CF385 /* Once Again.wav in Resources */,
+				6967AE2B296F6590000CF385 /* Adventure.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6967ADFF296F63D3000CF385 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6967AE09296F63D3000CF385 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6967ADED296F63D1000CF385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6967AE3D296F67B3000CF385 /* AlarmTriggeredViewModel.swift in Sources */,
+				6967AE88296F6D45000CF385 /* MainView.swift in Sources */,
+				6967AE4F296F6A0E000CF385 /* NotificationRequestManager.swift in Sources */,
+				693AAF0629707722002079E6 /* TimerStorage.swift in Sources */,
+				6967AE8A296F6D45000CF385 /* TimerPicker.swift in Sources */,
+				6967AE5A296F6B42000CF385 /* Onboarding.swift in Sources */,
+				6967AE53296F6AC0000CF385 /* MainTriggeredAlarmView.swift in Sources */,
+				6967ADF5296F63D1000CF385 /* DoseeApp.swift in Sources */,
+				6967AE55296F6AE9000CF385 /* AlarmNotificationView.swift in Sources */,
+				6967AE67296F6C6F000CF385 /* AddAlarm.swift in Sources */,
+				6967AE90296F6DBE000CF385 /* Stalarm.xcdatamodeld in Sources */,
+				6967AE36296F66EA000CF385 /* AudioManager.swift in Sources */,
+				6967AE45296F6850000CF385 /* MusicListViewModel.swift in Sources */,
+				6967AE2E296F65E3000CF385 /* NotificationManager.swift in Sources */,
+				6967AE39296F674C000CF385 /* AlarmViewModel.swift in Sources */,
+				6967AE4D296F69DE000CF385 /* ViewRouter.swift in Sources */,
+				6967AE6B296F6CBF000CF385 /* AlarmCard.swift in Sources */,
+				6967AE43296F6835000CF385 /* TimerActiveViewModel.swift in Sources */,
+				6967AE22296F651C000CF385 /* Constants.swift in Sources */,
+				6967AE41296F680D000CF385 /* TimerViewModel.swift in Sources */,
+				6967AE63296F6C06000CF385 /* MuisicList.swift in Sources */,
+				6967AE57296F6B0E000CF385 /* AlarmStopView.swift in Sources */,
+				6967AE6F296F6CCA000CF385 /* AlarmDeleteCard.swift in Sources */,
+				6967AE30296F6669000CF385 /* PersistenceController.swift in Sources */,
+				6967AE60296F6BB0000CF385 /* NotificationRequest.swift in Sources */,
+				6967AE4B296F698C000CF385 /* ActivityRecognizer.swift in Sources */,
+				6967AE32296F6696000CF385 /* AlarmStorage.swift in Sources */,
+				6967AE6D296F6CC5000CF385 /* EditAlarm.swift in Sources */,
+				6967AE69296F6C98000CF385 /* AlarmListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6967ADFD296F63D3000CF385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6967AE06296F63D3000CF385 /* DoseeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6967AE07296F63D3000CF385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6967AE10296F63D3000CF385 /* DoseeUITests.swift in Sources */,
+				6967AE12296F63D3000CF385 /* DoseeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6967AE03296F63D3000CF385 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6967ADF0296F63D1000CF385 /* Dosee */;
+			targetProxy = 6967AE02296F63D3000CF385 /* PBXContainerItemProxy */;
+		};
+		6967AE0D296F63D3000CF385 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6967ADF0296F63D1000CF385 /* Dosee */;
+			targetProxy = 6967AE0C296F63D3000CF385 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6967AE13296F63D3000CF385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6967AE14296F63D3000CF385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6967AE16296F63D3000CF385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dosee/Preview Content\"";
+				DEVELOPMENT_TEAM = YCY883W2JV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = appleaca.Dosee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6967AE17296F63D3000CF385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dosee/Preview Content\"";
+				DEVELOPMENT_TEAM = YCY883W2JV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = appleaca.Dosee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6967AE19296F63D3000CF385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YCY883W2JV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = appleaca.DoseeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dosee.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dosee";
+			};
+			name = Debug;
+		};
+		6967AE1A296F63D3000CF385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YCY883W2JV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = appleaca.DoseeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dosee.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dosee";
+			};
+			name = Release;
+		};
+		6967AE1C296F63D3000CF385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YCY883W2JV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = appleaca.DoseeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dosee;
+			};
+			name = Debug;
+		};
+		6967AE1D296F63D3000CF385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YCY883W2JV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = appleaca.DoseeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dosee;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6967ADEC296F63D1000CF385 /* Build configuration list for PBXProject "Dosee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6967AE13296F63D3000CF385 /* Debug */,
+				6967AE14296F63D3000CF385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6967AE15296F63D3000CF385 /* Build configuration list for PBXNativeTarget "Dosee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6967AE16296F63D3000CF385 /* Debug */,
+				6967AE17296F63D3000CF385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6967AE18296F63D3000CF385 /* Build configuration list for PBXNativeTarget "DoseeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6967AE19296F63D3000CF385 /* Debug */,
+				6967AE1A296F63D3000CF385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6967AE1B296F63D3000CF385 /* Build configuration list for PBXNativeTarget "DoseeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6967AE1C296F63D3000CF385 /* Debug */,
+				6967AE1D296F63D3000CF385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6967AE8E296F6DBE000CF385 /* Stalarm.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6967AE8F296F6DBE000CF385 /* Stalarm.xcdatamodel */,
+			);
+			currentVersion = 6967AE8F296F6DBE000CF385 /* Stalarm.xcdatamodel */;
+			name = Stalarm.xcdatamodeld;
+			path = "../../../../Downloads/stalarm-swiftui-main/Stalarm/Core Data/Stalarm.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6967ADE9296F63D1000CF385 /* Project object */;
+}
